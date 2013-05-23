@@ -1,9 +1,0 @@
-#level    #0: off     1:  error     2: debug
-logger.default.level=0
-logger.debug.level=  
-logger.error.level= 26
-logger.off.level=
-logger.logfile=EmbedThunder.log
-
-#unit 
-logger.filesize
