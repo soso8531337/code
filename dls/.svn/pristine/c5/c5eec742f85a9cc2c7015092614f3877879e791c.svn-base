@@ -1,0 +1,5 @@
+all:
+	arm-linux-gcc -DLINUX -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_COMPANY_NUM=144 -D_MEMPOOL_5M -D_TEST_RC -O3 -MD -fno-strict-aliasing  -Wall -fpic  -I/opt/toolchain/gcc-4.2.4-uClibc-0.9.29-toolchain/usr/include  --sysroot=/opt/toolchain/gcc-4.2.4-uClibc-0.9.29-toolchain -o EmbedThunder *.c libembed_thunder_manager.a libembed_thunder.a -lpthread -liconv
+
+clean:
+	rm *.o -rf
